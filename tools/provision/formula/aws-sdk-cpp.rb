@@ -4,16 +4,9 @@ class AwsSdkCpp < AbstractOsqueryFormula
   desc "AWS SDK for C++"
   homepage "https://github.com/aws/aws-sdk-cpp"
   license "Apache-2.0"
-  url "https://github.com/aws/aws-sdk-cpp/archive/1.4.55.tar.gz"
-  sha256 "0a70c2998d29cc4d8a4db08aac58eb196d404073f6586a136d074730317fe408"
+  url "https://github.com/aws/aws-sdk-cpp/archive/1.6.15.tar.gz"
+  sha256 "a0511813d43628ee07552c2d79868ef59ae3f1fd0428fbdc5412ad8ecda27891"
   revision 1
-
-  bottle do
-    root_url "https://osquery-packages.s3.amazonaws.com/bottles"
-    cellar :any_skip_relocation
-    sha256 "6d047fe0f7b0710aea9366af1a4f3c637c1fcd3a2f652abaa8ffc70ef5190451" => :sierra
-    sha256 "d161bd821efffe73ac6cb7e7f0cefe248981c6d3ab59be17ca2de5d7f8c4eff4" => :x86_64_linux
-  end
 
   depends_on "cmake" => :build
 
